@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyWebPage</title>
+    <style>
+      * {
+        border: none;
+        cursor: default;
+      }
+      body {
+        width: 600px;
+        height: 320px;
+        margin: 0;
+        background: #191a19; /* ---- temp ---- */
+      }
+      #positioning {
+        width: 600px;
+        height: 320px;
+        position: absolute;
+        border: none;
+      }
+      /* ---- background ---- */
+      .sunmode-background {
+        background-color: #f5f5fa;
+      }
+      .moonmode-background {
+        background-color: #343435;
+      }
+
+      /* ---- Toggle Light/Dark mode ---- */
+      .modetoggle {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      .modetoggle-sun {
+        background-color: #3d3c3c;
+      }
+      .modetoggle-moon {
+        background-color: #dbd5d5;
+      }
+
+      /* ---- Info ---- */
+      .info {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      }
+      .info-sun {
+        background-color: #fdd317;
+      }
+      .info-moon {
+        background-color: #dd19cd;
+      }
+
+      /* ---- textbox ---- */
+      .textbox-top-positioning,
+      .textbox-top-positioning:focus {
+        width: 500px;
+        height: 30px;
+        padding-left: 20px;
+        outline: none;
+        appearance: none;
+      }
+      .textbox-botton-positioning,
+      .textbox-botton-positioning:focus {
+        width: 500px;
+        height: 30px;
+        padding-left: 20px;
+        outline: none;
+        appearance: none;
+      }
+      .sunmode-textbox-top-background {
+        background-color: #f1f0e6;
+      }
+      .sunmode-textbox-botton-background {
+        background-color: #f1f0e6;
+      }
+      .moonmode-textbox-top-background {
+        background-color: #f1f0e6;
+      }
+      .moonmode-textbox-botton-background {
+        background-color: #f1f0e6;
+      }
+
+      /* ---- corners ---- */
+      .round-small {
+        border-radius: 50%;
+      }
+      .round {
+        border-radius: 20px;
+      }
+      .round-left {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .round-right {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      /* ---- Cursor congifs ---- */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* ---- Buttons ---- */
+      .button1 {
+        width: 50px;
+        height: 30px;
+        background-color: #91f114;
+      }
+      .button1:hover {
+        background-color: #ff0000;
+      }
+      .button2 {
+        width: 50px;
+        height: 30px;
+        background-color: #91f114;
+      }
+      .button2:hover {
+        background-color: #00ff00;
+      }
+      .button3 {
+        width: 80px;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #91f114;
+      }
+      .button3:hover {
+        background-color: #0000ff;
+      }
+      .button4 {
+        width: 80px;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #91f114;
+      }
+      .button4:hover {
+        background-color: #ffff00;
+      }
+      .button5 {
+        width: 80px;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #91f114;
+      }
+      .button5:hover {
+        background-color: #ff00ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="positioning" class="sunmode-background">
+      <button class="modetoggle modetoggle-sun round-small cursor"></button>
+      <button class="info info-sun round-small cursor"></button>
+
+      <input
+        type="text"
+        class="round-left textbox-top-positioning sunmode-textbox-top-background"
+      />
+
+      <button class="cursor button1 round-right">1</button>
+
+      <input
+        type="text"
+        class="round-left textbox-botton-positioning sunmode-textbox-botton-background"
+      />
+      <button class="cursor button2 round-right">2</button>
+
+      <button class="cursor button3 round">3</button>
+      <button class="cursor button4 round">4</button>
+      <button class="cursor button5 round">5</button>
+    </div>
+  </body>
+</html>

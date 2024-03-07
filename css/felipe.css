@@ -1,0 +1,122 @@
+:root {
+  --width-page-size: 560px;
+  --height-page-size: 320px;
+  --primary-color: #f0efec;
+  --textbox-background-color: rgb(248, 248, 231);
+
+  --inputs-width: 45px;
+  --button-size: var(--inputs-width);
+  --checkbox-size: var(--inputs-width);
+
+  --box-shadow: rgba(0, 0, 0, 0.075) 3px 3px 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: var(--width-page-size);
+  height: var(--height-page-size);
+}
+
+/* MAINBOX */
+
+#mainbox {
+  background-color: #888b8b;
+  border: none;
+}
+
+/* INNERBOX */
+
+.innerbox {
+  height: 80px;
+  background-color: var(--primary-color);
+}
+
+.innerbox div {
+  border: none;
+  display: flex;
+
+  margin-inline: 15px;
+
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  justify-content: left;
+}
+
+/* ROUND CORNERS */
+
+.left-round-corner {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.right-round-corner {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* TEXTBOX */
+
+.textbox {
+  padding-left: 15px;
+  background-color: var(--textbox-background-color);
+  width: 100%;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+  width: var(--checkbox-size);
+  cursor: pointer;
+  appearance: none;
+}
+
+.checkbox:nth-child(odd) {
+  background-color: #f3b713;
+}
+
+.checkbox:nth-child(even) {
+  background-color: #f19408;
+}
+
+/* TEXTBOX & CHECKBOX */
+
+.textbox,
+.checkbox {
+  border: none;
+  outline: none;
+}
+
+/* BUTTONS & INPUTS */
+
+button {
+  background-color: #0f89fa;
+  border: none;
+  cursor: pointer;
+  width: var(--button-size);
+}
+
+button:hover,
+.checkbox:hover {
+  filter: brightness(1.5);
+}
+
+input,
+button {
+  height: 30px;
+}
+
+div.buttons button {
+  width: 80px;
+  height: 35px;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.active {
+  background-color: red;
+}

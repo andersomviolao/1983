@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="../css/felipe.css" />
+  </head>
+  <body>
+    <div id="mainbox">
+      <div class="innerbox"></div>
+      <div class="innerbox">
+        <div class="left-round-corner right-round-corner">
+          <input type="text" class="left-round-corner textbox" />
+          <button
+            id="botao"
+            class="right-round-corner"
+            onclick="addClassName()"
+          ></button>
+        </div>
+      </div>
+      <div class="innerbox">
+        <div class="left-round-corner right-round-corner">
+          <input type="text" class="left-round-corner textbox" />
+          <input type="checkbox" class="checkbox" />
+          <button class="right-round-corner"></button>
+        </div>
+      </div>
+      <div class="innerbox buttons">
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
+    <script>
+      var button = document.getElementsByClassName("botao");
+      var isActive = true;
+      var oldClass;
+      function addClassName() {
+        if (isActive) {
+          oldClass = button.className;
+          button.className = oldClass + " active";
+          isActive = false;
+        } else {
+          button.className = oldClass;
+          isActive = true;
+        }
+      }
+    </script>
+  </body>
+</html>

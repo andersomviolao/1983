@@ -1,0 +1,196 @@
+* {
+  border: none;
+  cursor: default;
+}
+body {
+  width: 600px;
+  height: 320px;
+  margin: 0;
+  background: #191a19;
+}
+#positioning {
+  width: 600px;
+  height: 320px;
+  position: absolute;
+  border: none;
+}
+
+/* -- General -- */
+.fade {
+  transition: background-color 0.1s ease-out;
+}
+.cursor {
+  cursor: pointer;
+}
+.round-small {
+  border-radius: 50%;
+}
+.round {
+  border-radius: 20px;
+}
+.round-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.round-right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sunmode-background {
+  background-color: #f5f5fa;
+}
+.moonmode-background {
+  background-color: #343435;
+}
+
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+.button-1-toggle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.button-1-toggle-day {
+  background-color: #3d3c3c;
+}
+.button-1-toggle-day:hover {
+  background-color: #bb1717;
+}
+.button-1-toggle-day:active {
+  background-color: #27c513;
+}
+
+.button-1-toggle-night {
+  background-color: #dbd5d5;
+}
+.button-1-toggle-night:hover {
+  background-color: #dbd5d5;
+}
+.button-1-toggle-night:active {
+  background-color: #bbbbbb;
+}
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+/* -- Button 1 Toggle -- */
+
+/* -- Button 2 Info -- */
+.info {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+.info-sun {
+  background-color: #fdd317;
+}
+.info-moon {
+  background-color: #dd19cd;
+}
+.infoButton {
+  width: 50px;
+  height: 30px;
+  background-color: #91f114;
+}
+.infoButton:hover {
+  background-color: #00ff00;
+}
+
+/* -- Button 3 Find -- */
+.findButton {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #91f114;
+}
+.findButton:hover {
+  background-color: #0000ff;
+}
+
+/* -- Button 4 Test -- */
+.testButton {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #91f114;
+}
+.testButton:hover {
+  background-color: #ffff00;
+}
+
+/* -- Button 5 Clear -- */
+.clearButton {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #91f114;
+}
+.clearButton:hover {
+  background-color: #ff00ff;
+}
+/* -- Button 6 Run-Pause -- */
+.runPauseButton {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #91f114;
+}
+.runPauseButton:hover {
+  background-color: #ff00ff;
+}
+
+/* -- Button 7 Exit -- */
+.exitButton {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #91f114;
+}
+.exitButton:hover {
+  background-color: #ff00ff;
+}
+
+/* -- TextBox 1 Folder -- */
+.textbox-top-positioning,
+.textbox-top-positioning:focus {
+  width: 500px;
+  height: 30px;
+  padding-left: 20px;
+  outline: none;
+  appearance: none;
+}
+.moonmode-textbox-top-background {
+  background-color: #f1f0e6;
+}
+.sunmode-textbox-top-background {
+  background-color: #f1f0e6;
+}
+
+/* -- TextBox 2 WebHook -- */
+.textbox-botton-positioning,
+.textbox-botton-positioning:focus {
+  width: 500px;
+  height: 30px;
+  padding-left: 20px;
+  outline: none;
+  appearance: none;
+}
+.sunmode-textbox-botton-background {
+  background-color: #f1f0e6;
+}
+.moonmode-textbox-botton-background {
+  background-color: #f1f0e6;
+}
