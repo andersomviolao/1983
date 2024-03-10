@@ -59,7 +59,7 @@ body {
   width: 50px;
   height: 50px;
   margin: 0px;
-  position: relative;  
+  position: relative;
   float: left;
   background-color: #27c513;
   overflow: hidden;
@@ -70,15 +70,15 @@ body {
   width: 20px;
   height: 20px;
   border: none;
-  transition: width 0.2s, height 0.2s, background-color 0.2s; ease-out;
+  transition: width 0.2s, height 0.2s, background-color 0.2s ease-out;
 }
 
 /* -------------------------------------- Button 1 Toggle -- */
 .button-1-toggle {
-position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transform-origin: center;
   color: #e80ef0;
 }
@@ -113,7 +113,7 @@ position: absolute;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transform-origin: center;
   color: #e80ef0;
 }
