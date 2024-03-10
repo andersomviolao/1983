@@ -1,0 +1,144 @@
+* {
+  border: none;
+  cursor: default;
+}
+
+body {
+  width: 600px;
+  height: 320px;
+  margin: 0;
+}
+
+/* -------------------------------------- Configs -- */
+.colorfade {
+  transition: background-color 0.2s ease-out;
+}
+.cursor {
+  cursor: pointer;
+}
+.round-small {
+  border-radius: 50%;
+}
+.wave {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.322);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: wave 0.2s linear;
+  pointer-events: none;
+}
+@keyframes wave {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+}
+
+/* -------------------------------------- Backgrounds -- */
+.day-bg {
+  background-color: #e9e9ee;
+}
+.night-bg {
+  background-color: #343435;
+}
+
+/* -------------------------------------- Positioning -- */
+.bgpositioning {
+  width: 600px;
+  height: 320px;
+  position: absolute;
+}
+
+.toppositioning {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  position: relative;  
+  float: left;
+  background-color: #27c513;
+  overflow: hidden;
+}
+
+/* -------------------------------------- Buttons -- */
+.buttons-top {
+  width: 20px;
+  height: 20px;
+  border: none;
+  transition: width 0.2s, height 0.2s, background-color 0.2s; ease-out;
+}
+
+/* -------------------------------------- Button 1 Toggle -- */
+.button-1-toggle {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transform-origin: center;
+  color: #e80ef0;
+}
+/* -- Day -- */
+.button-1-toggle-day {
+  background-color: #3d3c3c;
+}
+.button-1-toggle-day:hover {
+  width: 50%;
+  height: 50%;
+  background-color: #bb1717;
+}
+.button-1-toggle-day:active {
+  background-color: #ee17ca;
+}
+/* -- Night -- */
+.button-1-toggle-night {
+  background-color: #b93b3b;
+}
+.button-1-toggle-night:hover {
+  width: 50%;
+  height: 50%;
+  background-color: #461b1b;
+}
+.button-1-toggle-night:active {
+  background-color: #c51313;
+}
+/* -- Button 1 Toggle -- */
+
+/* -------------------------------------- Button 2 Info -- */
+.button-2-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transform-origin: center;
+  color: #e80ef0;
+}
+/* -- Day -- */
+.button-2-info-day {
+  background-color: #3d3c3c;
+}
+.button-2-info-day:hover {
+  width: 50%;
+  height: 50%;
+  background-color: #bb1717;
+}
+.button-2-info-day:active {
+  background-color: #27c513;
+}
+/* -- Night -- */
+.button-2-info-night {
+  background-color: #b93b3b;
+}
+.button-2-info-night:hover {
+  width: 50%;
+  height: 50%;
+  background-color: #bb1717;
+}
+.button-2-info-night:active {
+  background-color: #c51313;
+}
+/* -- Button 2 Info -- */

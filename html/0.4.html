@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>teste</title>
+    <link rel="stylesheet" href="/css/style.0.4.css" />
+  </head>
+  <body>
+    <div class="bgpositioning day-bg">
+      <div class="toppositioning">
+        <!-- Button 1 Toggle -->
+        <button
+          class="buttons-top round-small button-1-toggle button-1-toggle-day cursor colorfade"
+          onclick="createRipple(event)"
+        >
+          t
+        </button>
+      </div>
+      <div class="toppositioning">
+        <!-- Button 2 Info -->
+        <button
+          class="buttons-top round-small button-2-info button-2-info-day cursor colorfade"
+          onclick="createRipple(event)"
+        >
+          i
+        </button>
+      </div>
+    </div>
+    <script>
+      function createRipple(event) {
+        const button = event.currentTarget;
+
+        const circle = document.createElement("span");
+        circle.classList.add("wave");
+
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        circle.style.width = circle.style.height = `${diameter}px`;
+
+        const rect = button.getBoundingClientRect();
+        circle.style.left = `${event.clientX - rect.left - diameter / 2}px`;
+        circle.style.top = `${event.clientY - rect.top - diameter / 2}px`;
+
+        circle.addEventListener("animationend", () => {
+          circle.remove();
+        });
+
+        button.appendChild(circle);
+      }
+    </script>
+  </body>
+</html>

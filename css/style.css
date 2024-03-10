@@ -1,3 +1,5 @@
+:root {
+}
 * {
   border: none;
   cursor: default;
@@ -15,155 +17,376 @@ body {
   border: none;
 }
 
-/* -- General -- */
-.fade {
-  transition: background-color 0.1s ease-out;
-}
+/* -------------------------------------- Configs -- */
+/* .fade {
+  transition: background-color 0.5s ease-out;
+} */
 .cursor {
   cursor: pointer;
 }
 .round-small {
   border-radius: 50%;
 }
-.round {
+.round-medium {
   border-radius: 20px;
 }
-.round-left {
+.round-medium-left {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.round-right {
+.round-medium-right {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
-.sunmode-background {
-  background-color: #f5f5fa;
+.round-big {
+  border-radius: 30px;
 }
-.moonmode-background {
+
+/* -------------------------------------- Backgrounds -- */
+.day-background {
+  background-color: #cdcddf;
+}
+.night-background {
   background-color: #343435;
 }
 
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-.button-1-toggle {
+/* -------------------------------------- Buttons -- */
+.buttons-top {
   width: 20px;
   height: 20px;
+  transition: width 2s, height 2s, top 2s, left 2s, background-color 2s; ease-out;
+}
+.buttons-middle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.buttons-botton {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+/* -------------------------------------- Button 1 Toggle -- */
+.button-1-toggle {
   position: absolute;
   top: 20px;
   left: 20px;
+  transform-origin: center;
+  color: #e80ef0;
 }
+/* -- Day -- */
 .button-1-toggle-day {
   background-color: #3d3c3c;
 }
 .button-1-toggle-day:hover {
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  left: 20px;
   background-color: #bb1717;
 }
 .button-1-toggle-day:active {
   background-color: #27c513;
 }
-
+/* -- Night -- */
 .button-1-toggle-night {
-  background-color: #dbd5d5;
+  background-color: #b93b3b;
 }
 .button-1-toggle-night:hover {
-  background-color: #dbd5d5;
+  /* width: 30px;
+  height: 30px; */
+  position: absolute;
+  /* top: 15px;
+  left: 15px; */
+  background-color: #461b1b;
+  resize: both;
 }
 .button-1-toggle-night:active {
-  background-color: #bbbbbb;
+  background-color: #c51313;
 }
 /* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
-/* -- Button 1 Toggle -- */
 
-/* -- Button 2 Info -- */
-.info {
-  width: 20px;
-  height: 20px;
+/* -------------------------------------- Button 2 Info -- */
+.button-2-info {
   position: absolute;
   top: 20px;
-  left: 50px;
+  left: 80px;
+  transform-origin: center;
 }
-.info-sun {
-  background-color: #fdd317;
+/* -- Day -- */
+.button-2-info-day {
+  background-color: #3d3c3c;
 }
-.info-moon {
-  background-color: #dd19cd;
-}
-.infoButton {
-  width: 50px;
+.button-2-info-day:hover {
+  width: 30px;
   height: 30px;
-  background-color: #91f114;
+  top: 15px;
+  left: 55px;
+  background-color: #bb1717;
 }
-.infoButton:hover {
-  background-color: #00ff00;
+.button-2-info-day:active {
+  background-color: #27c513;
 }
+/* -- Night -- */
+.button-2-info-night {
+  background-color: #b93b3b;
+}
+.button-2-info-night:hover {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  background-color: #461b1b;
+}
+.button-2-info-night:active {
+  background-color: #c51313;
+}
+/* -- Button 2 Info -- */
 
+/* -------------------------------------- Button 3 Find -- */
+.button-3-find {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
+}
+/* -- Day -- */
+.button-3-find-day {
+  background-color: #3d3c3c;
+}
+.button-3-find-day:hover {
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 55px;
+  background-color: #bb1717;
+}
+.button-3-find-day:active {
+  background-color: #27c513;
+}
+/* -- Night -- */
+.button-3-find-night {
+  background-color: #b93b3b;
+}
+.button-3-find-night:hover {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  background-color: #461b1b;
+}
+.button-3-find-night:active {
+  background-color: #c51313;
+}
 /* -- Button 3 Find -- */
-.findButton {
-  width: 80px;
-  height: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #91f114;
-}
-.findButton:hover {
-  background-color: #0000ff;
-}
 
+/* -------------------------------------- Button 4 Test -- */
+.button-4-test {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
+}
+/* -- Day -- */
+.button-4-test-day {
+  background-color: #3d3c3c;
+}
+.button-4-test-day:hover {
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 55px;
+  background-color: #bb1717;
+}
+.button-4-test-day:active {
+  background-color: #27c513;
+}
+/* -- Night -- */
+.button-4-test-night {
+  background-color: #b93b3b;
+}
+.button-4-test-night:hover {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  background-color: #461b1b;
+}
+.button-4-test-night:active {
+  background-color: #c51313;
+}
 /* -- Button 4 Test -- */
-.testButton {
-  width: 80px;
-  height: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #91f114;
-}
-.testButton:hover {
-  background-color: #ffff00;
-}
 
-/* -- Button 5 Clear -- */
-.clearButton {
-  width: 80px;
-  height: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #91f114;
+/* -------------------------------------- Button 5 Clear -- */
+.button-5-clear {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
 }
-.clearButton:hover {
-  background-color: #ff00ff;
+/* -- Day -- */
+.button-5-clear-day {
+  background-color: #3d3c3c;
+}
+.button-5-clear-day:hover {
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 55px;
+  background-color: #bb1717;
+}
+.button-5-clear-day:active {
+  background-color: #27c513;
+}
+/* -- Night -- */
+.button-5-clear-night {
+  background-color: #b93b3b;
+}
+.button-5-clear-night:hover {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  background-color: #461b1b;
+}
+.button-5-clear-night:active {
+  background-color: #c51313;
+}
+/* -- Button 5 Clear -- */
+
+/* -------------------------------------- Button 6 Run-Pause -- */
+.button-6-run-pause {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
+}
+/* -- Day -- */
+.button-6-run-pause-day {
+  background-color: #3d3c3c;
+}
+.button-6-run-pause-day:hover {
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 55px;
+  background-color: #bb1717;
+}
+.button-6-run-pause-day:active {
+  background-color: #27c513;
+}
+/* -- Night -- */
+.button-6-run-pause-night {
+  background-color: #b93b3b;
+}
+.button-6-run-pause-night:hover {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  background-color: #461b1b;
+}
+.button-6-run-pause-night:active {
+  background-color: #c51313;
 }
 /* -- Button 6 Run-Pause -- */
-.runPauseButton {
-  width: 80px;
-  height: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #91f114;
-}
-.runPauseButton:hover {
-  background-color: #ff00ff;
-}
 
+/* -------------------------------------- Button 7 Exit -- */
+.button-7-exit {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
+}
+/* -- Day -- */
+.button-7-exit-day {
+  background-color: #3d3c3c;
+}
+.button-7-exit-day:hover {
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 55px;
+  background-color: #bb1717;
+}
+.button-7-exit-day:active {
+  background-color: #27c513;
+}
+/* -- Night -- */
+.button-7-exit-night {
+  background-color: #b93b3b;
+}
+.button-7-exit-night:hover {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  background-color: #461b1b;
+}
+.button-7-exit-night:active {
+  background-color: #c51313;
+}
 /* -- Button 7 Exit -- */
-.exitButton {
-  width: 80px;
-  height: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #91f114;
-}
-.exitButton:hover {
-  background-color: #ff00ff;
-}
 
-/* -- TextBox 1 Folder -- */
+/* -------------------------------------- Textbox 1 Folder -- */
+.textbox-1-folder {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
+  width: 150px;
+  height: 30px;
+  border: 2px solid #3d3c3c;
+  background-color: #1a1a1a;
+  padding: 5px;
+  box-sizing: border-box;
+}
+/* -- Hover -- */
+.textbox-1-folder:hover {
+  border-color: #bb1717;
+}
+/* -- Active -- */
+.textbox-1-folder:active,
+.textbox-1-folder:focus {
+  border-color: #27c513;
+  outline: none;
+}
+/* -- Text Color -- */
+.textbox-1-folder::placeholder {
+  color: #666666;
+}
+/* -------------------------------------- Textbox 1 Folder -- */
+
+/* -------------------------------------- Textbox 2 WebHook -- */
+.textbox-2-webhook {
+  top: 20px;
+  left: 60px;
+  color: #e80ef0;
+  width: 150px;
+  height: 30px;
+  border: 2px solid #3d3c3c;
+  background-color: #1a1a1a;
+  padding: 5px;
+  box-sizing: border-box;
+}
+/* -- Hover -- */
+.textbox-2-webhook:hover {
+  border-color: #bb1717;
+}
+/* -- Active -- */
+.textbox-2-webhook:active,
+.textbox-2-webhook:focus {
+  border-color: #27c513;
+  outline: none;
+}
+/* -- Text Color -- */
+.textbox-2-webhook::placeholder {
+  color: #666666;
+}
+/* -------------------------------------- Textbox 2 WebHook -- */
+
+/* -------------------------------------- TextBox 1 Folder -- */
 .textbox-top-positioning,
 .textbox-top-positioning:focus {
   width: 500px;
@@ -179,7 +402,7 @@ body {
   background-color: #f1f0e6;
 }
 
-/* -- TextBox 2 WebHook -- */
+/* -------------------------------------- TextBox 2 WebHook -- */
 .textbox-botton-positioning,
 .textbox-botton-positioning:focus {
   width: 500px;
