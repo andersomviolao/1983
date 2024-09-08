@@ -1,1 +1,19 @@
-temp
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://github.com/andersomviolao/al-fandom/blob/main/al-media/al-media-files-home-bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none; /* Impede a interação com a imagem de fundo */
+}
+
+.content {
+    text-align: center;
+    pointer-events: auto; /* Permite a interação com o conteúdo */
+}
