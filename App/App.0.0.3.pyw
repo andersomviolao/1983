@@ -16,7 +16,6 @@ class CustomWindow(QWidget):
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
 
-        # Close button
         self.close_button = QPushButton(self)
         self.close_button.setFixedSize(16, 16)
         self.close_button.setStyleSheet("""
@@ -29,30 +28,26 @@ class CustomWindow(QWidget):
         """)
         self.close_button.clicked.connect(self.close)
 
-        # Add opacity effect and animation for hover
         self.close_button_opacity = QGraphicsOpacityEffect(self.close_button)
         self.close_button.setGraphicsEffect(self.close_button_opacity)
 
         self.close_fade_in = QPropertyAnimation(self.close_button_opacity, b"opacity")
         self.close_fade_out = QPropertyAnimation(self.close_button_opacity, b"opacity")
         
-        # Adjust animation durations (in milliseconds)
-        self.close_fade_in.setDuration(500)  # 500 ms fade-in
-        self.close_fade_out.setDuration(500)  # 500 ms fade-out
+        self.close_fade_in.setDuration(1500)
+        self.close_fade_out.setDuration(1500)
         
-        self.close_fade_in.setStartValue(0.5)  # Start at 50% opacity
-        self.close_fade_in.setEndValue(1.0)   # End at 100% opacity
+        self.close_fade_in.setStartValue(0.2)
+        self.close_fade_in.setEndValue(1.0)
         self.close_fade_in.setEasingCurve(QEasingCurve.Type.InOutQuad)
 
-        self.close_fade_out.setStartValue(1.0)  # Start at 100% opacity
-        self.close_fade_out.setEndValue(0.5)    # End at 50% opacity
+        self.close_fade_out.setStartValue(1.0)
+        self.close_fade_out.setEndValue(0.2)
         self.close_fade_out.setEasingCurve(QEasingCurve.Type.InOutQuad)
 
-        # Connect hover events directly to the close button
         self.close_button.enterEvent = self.on_close_button_hover
         self.close_button.leaveEvent = self.on_close_button_leave
 
-        # Minimize button
         self.minimize_button = QPushButton(self)
         self.minimize_button.setFixedSize(16, 16)
         self.minimize_button.setStyleSheet("""
@@ -65,34 +60,29 @@ class CustomWindow(QWidget):
         """)
         self.minimize_button.clicked.connect(self.minimize_to_tray)
 
-        # Add opacity effect and animation for minimize button hover
         self.minimize_button_opacity = QGraphicsOpacityEffect(self.minimize_button)
         self.minimize_button.setGraphicsEffect(self.minimize_button_opacity)
 
         self.minimize_fade_in = QPropertyAnimation(self.minimize_button_opacity, b"opacity")
         self.minimize_fade_out = QPropertyAnimation(self.minimize_button_opacity, b"opacity")
         
-        # Adjust animation durations (in milliseconds)
-        self.minimize_fade_in.setDuration(500)  # 500 ms fade-in
-        self.minimize_fade_out.setDuration(500)  # 500 ms fade-out
+        self.minimize_fade_in.setDuration(1500)
+        self.minimize_fade_out.setDuration(1500)
         
-        self.minimize_fade_in.setStartValue(0.5)  # Start at 50% opacity
-        self.minimize_fade_in.setEndValue(1.0)    # End at 100% opacity
+        self.minimize_fade_in.setStartValue(0.2)
+        self.minimize_fade_in.setEndValue(1.0)
         self.minimize_fade_in.setEasingCurve(QEasingCurve.Type.InOutQuad)
 
-        self.minimize_fade_out.setStartValue(1.0)  # Start at 100% opacity
-        self.minimize_fade_out.setEndValue(0.5)    # End at 50% opacity
+        self.minimize_fade_out.setStartValue(1.0)
+        self.minimize_fade_out.setEndValue(0.2)
         self.minimize_fade_out.setEasingCurve(QEasingCurve.Type.InOutQuad)
 
-        # Connect hover events directly to the minimize button
         self.minimize_button.enterEvent = self.on_minimize_button_hover
         self.minimize_button.leaveEvent = self.on_minimize_button_leave
 
-        # Position buttons
         self.minimize_button.move(8, 8)
         self.close_button.move(32, 8)
 
-        # Tray icon setup
         self.tray_icon = QSystemTrayIcon(self)
         icon_path = os.path.join(os.path.dirname(__file__), "Bin/icon.png")
         self.tray_icon.setIcon(QIcon(icon_path) if os.path.exists(icon_path) else QIcon())
